@@ -1,0 +1,84 @@
+:root {
+    --lili-50: #f6f3ff;
+    --lili-100: #efeafd;
+    --lili-200: #e0d7fd;
+    --lili-300: #c9b7fb;
+    --lili-400: #af8ef7;
+    --lili-500: #8f56f1;
+    --lili-600: #883fe8;
+    --lili-700: #792dd4;
+    --lili-800: #6525b2;
+    --lili-900: #542092;
+    --lili-950: #341263;
+
+    --azure-50: #eff8ff;
+    --azure-100: #dff0ff;
+    --azure-200: #b8e2ff;
+    --azure-300: #78cbff;
+    --azure-400: #55c0ff;
+    --azure-500: #0699f1;
+    --azure-600: #007bce;
+    --azure-700: #0061a7;
+    --azure-800: #02528a;
+    --azure-900: #084472;
+    --azure-950: #062b4b;
+}
+
+@keyframes blink {
+    0%, 49% {
+        opacity: 1;
+    }
+    50%, 100% {
+        opacity: 0.2;
+    }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+
+    background-color: var(--lili-50);
+}
+
+body.azure-mode {
+    background-color: var(--azure-50);
+}
+
+.container {
+    display: flex;
+    gap: 0.25rem;
+    flex-wrap: wrap;
+    width: 156px;
+}
+
+.node-passed,
+.node-anticipated {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    user-select: none;
+}
+
+.node-passed {
+    background-color: var(--lili-200);
+}
+
+.node-passed.azure-mode {
+    background-color: var(--azure-200)
+}
+
+.node-anticipated {
+    background-color: var(--lili-600);
+}
+
+.node-anticipated.azure-mode {
+    background-color: var(--azure-600);
+}
+
+.node-current-week {
+    animation: blink 1.09s infinite;
+}
