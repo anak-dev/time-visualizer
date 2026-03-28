@@ -61,6 +61,7 @@ body.azure-mode {
     width: 1rem;
     border-radius: 50%;
     user-select: none;
+    -webkit-user-select: none;
 }
 
 .node-passed {
