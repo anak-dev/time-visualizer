@@ -17,6 +17,10 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
 
+  &.dark-mode {
+    background-color: var(--lili-950)
+  }
+
   &.azure-mode {
     background-color: var(--azure-50);
 
@@ -26,6 +30,10 @@
 
     .node-anticipated {
       background-color: var(--azure-600);
+    }
+
+    &.dark-mode {
+      background-color: var(--azure-950)
     }
   }
 }

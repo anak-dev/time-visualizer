@@ -8,6 +8,7 @@ import {ThemeService} from './services/theme.service';
     <div
       class="container"
       [class.azure-mode]="!isLiliTheme()"
+      [class.dark-mode]="isDarkMode()"
       (click)="toggleTheme()"
     >
       <div class="node-container">
@@ -32,6 +33,7 @@ export class App implements OnInit {
   private readonly currentDate = new Date();
 
   protected isLiliTheme = signal(true);
+  protected isDarkMode = signal(false);
 
   private totalWeeks = computed(() =>
     this.getDifferenceInWeeks(this.startDate, this.endDate)
@@ -51,12 +53,17 @@ export class App implements OnInit {
 
   ngOnInit(): void {
     this.isLiliTheme.set(this.themeService.getTheme());
+    this.isDarkMode.set(this.getDarkModePreference());
   }
 
   protected toggleTheme(): void {
     const newTheme = !this.isLiliTheme();
     this.isLiliTheme.set(newTheme);
     this.themeService.storeTheme(newTheme);
+  }
+
+  private getDarkModePreference(): boolean {
+    return window.matchMedia('(prefers-color-scheme: dark)').matches;
   }
 
   private getDifferenceInWeeks(startDate: Date, endDate: Date): number {
