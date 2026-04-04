@@ -1,13 +1,16 @@
 @keyframes blink {
   0%, 49% {
-    opacity: 1;
+    background-color: var(--node-anticipated-color);
   }
   50%, 100% {
-    opacity: 0.2;
+    background-color: var(--node-passed-color);
   }
 }
 
 .container {
+  --node-anticipated-color: var(--lili-600);
+  --node-passed-color: var(--lili-200);
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,6 +25,9 @@
   }
 
   &.azure-mode {
+    --node-anticipated-color: var(--azure-600);
+    --node-passed-color: var(--azure-200);
+
     background-color: var(--azure-50);
 
     .node-passed {
