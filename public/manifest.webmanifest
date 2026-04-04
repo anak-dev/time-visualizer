@@ -1,6 +1,6 @@
 {
-  "name": "time-visualizer",
-  "short_name": "time-visualizer",
+  "name": "Time Visualizer",
+  "short_name": "Time Visualizer",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",
