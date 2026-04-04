@@ -1,10 +1,5 @@
-import {Component, signal, computed, inject, OnInit} from '@angular/core';
+import {Component, computed, inject, OnInit, signal} from '@angular/core';
 import {ThemeService} from './services/theme.service';
-
-interface WeekNode {
-  isPassed: boolean;
-  isCurrentWeek: boolean;
-}
 
 @Component({
   selector: 'app-root',
