@@ -1,7 +1,7 @@
 {
   "configVersion": 1,
-  "timestamp": 1775274978185,
-  "index": "https://anak-dev.github.io/time-visualizer/index.html",
+  "timestamp": 1778029026987,
+  "index": "/index.html",
   "assetGroups": [
     {
       "name": "app",
@@ -11,10 +11,10 @@
         "ignoreVary": true
       },
       "urls": [
-        "https://anak-dev.github.io/time-visualizer/index.html",
-        "https://anak-dev.github.io/time-visualizer/main-4ST4ASEH.js",
-        "https://anak-dev.github.io/time-visualizer/manifest.webmanifest",
-        "https://anak-dev.github.io/time-visualizer/styles-SQFCWE7R.css"
+        "/index.html",
+        "/main-ITJQAL2O.js",
+        "/manifest.webmanifest",
+        "/styles-XF46PWWA.css"
       ],
       "patterns": []
     },
@@ -26,36 +26,36 @@
         "ignoreVary": true
       },
       "urls": [
-        "https://anak-dev.github.io/time-visualizer/icons/icon-120x120.png",
-        "https://anak-dev.github.io/time-visualizer/icons/icon-128x128.png",
-        "https://anak-dev.github.io/time-visualizer/icons/icon-144x144.png",
-        "https://anak-dev.github.io/time-visualizer/icons/icon-152x152.png",
-        "https://anak-dev.github.io/time-visualizer/icons/icon-180x180.png",
-        "https://anak-dev.github.io/time-visualizer/icons/icon-192x192.png",
-        "https://anak-dev.github.io/time-visualizer/icons/icon-384x384.png",
-        "https://anak-dev.github.io/time-visualizer/icons/icon-512x512.png",
-        "https://anak-dev.github.io/time-visualizer/icons/icon-72x72.png",
-        "https://anak-dev.github.io/time-visualizer/icons/icon-96x96.png"
+        "/icons/icon-120x120.png",
+        "/icons/icon-128x128.png",
+        "/icons/icon-144x144.png",
+        "/icons/icon-152x152.png",
+        "/icons/icon-180x180.png",
+        "/icons/icon-192x192.png",
+        "/icons/icon-384x384.png",
+        "/icons/icon-512x512.png",
+        "/icons/icon-72x72.png",
+        "/icons/icon-96x96.png"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "https://anak-dev.github.io/time-visualizer/icons/icon-120x120.png": "02c8a1eb9a042c6138e36c8f83e8f1b7076d430c",
-    "https://anak-dev.github.io/time-visualizer/icons/icon-128x128.png": "636c10462932080f2278eb7cde1a46e66131b966",
-    "https://anak-dev.github.io/time-visualizer/icons/icon-144x144.png": "e8b9dc1b79705f3ded43bab78e2a3f64a1b70a42",
-    "https://anak-dev.github.io/time-visualizer/icons/icon-152x152.png": "d0d5ce96dfb67bc579d0ac673ae8fc08babc47c2",
-    "https://anak-dev.github.io/time-visualizer/icons/icon-180x180.png": "83d9ee2fbf67c9521b5a1e11a8a4209ec1827772",
-    "https://anak-dev.github.io/time-visualizer/icons/icon-192x192.png": "0c1993cc45350651d3c9b18459ec91cca8d4a6b5",
-    "https://anak-dev.github.io/time-visualizer/icons/icon-384x384.png": "1588f81c92f471fd60f8580051130c7ad98fb538",
-    "https://anak-dev.github.io/time-visualizer/icons/icon-512x512.png": "3c436fecc4983cf9c7be264e3e90eaec7585aa31",
-    "https://anak-dev.github.io/time-visualizer/icons/icon-72x72.png": "ca8b9d2bf1f7dbb9734350ebc49cc5eb0db11fa7",
-    "https://anak-dev.github.io/time-visualizer/icons/icon-96x96.png": "54a89de05c952540fe8dc7db9357a4f50b10d180",
-    "https://anak-dev.github.io/time-visualizer/index.html": "af21e7a2a91e24b32a91e0bcd725b5276bcdda86",
-    "https://anak-dev.github.io/time-visualizer/main-4ST4ASEH.js": "035d6d04cbaa0a243be73b0429acdf31dd52f098",
-    "https://anak-dev.github.io/time-visualizer/manifest.webmanifest": "9bae24785cb759950e78323e3e5510248ad91947",
-    "https://anak-dev.github.io/time-visualizer/styles-SQFCWE7R.css": "ec6007c42fc6b7de670638a19000c51d28dc4362"
+    "/icons/icon-120x120.png": "02c8a1eb9a042c6138e36c8f83e8f1b7076d430c",
+    "/icons/icon-128x128.png": "636c10462932080f2278eb7cde1a46e66131b966",
+    "/icons/icon-144x144.png": "e8b9dc1b79705f3ded43bab78e2a3f64a1b70a42",
+    "/icons/icon-152x152.png": "d0d5ce96dfb67bc579d0ac673ae8fc08babc47c2",
+    "/icons/icon-180x180.png": "83d9ee2fbf67c9521b5a1e11a8a4209ec1827772",
+    "/icons/icon-192x192.png": "0c1993cc45350651d3c9b18459ec91cca8d4a6b5",
+    "/icons/icon-384x384.png": "1588f81c92f471fd60f8580051130c7ad98fb538",
+    "/icons/icon-512x512.png": "3c436fecc4983cf9c7be264e3e90eaec7585aa31",
+    "/icons/icon-72x72.png": "ca8b9d2bf1f7dbb9734350ebc49cc5eb0db11fa7",
+    "/icons/icon-96x96.png": "54a89de05c952540fe8dc7db9357a4f50b10d180",
+    "/index.html": "73a8a5194b7631a810efb3f3d6fa976063f583de",
+    "/main-ITJQAL2O.js": "832e6de7600d76aadbdd96a797720438331c6549",
+    "/manifest.webmanifest": "9bae24785cb759950e78323e3e5510248ad91947",
+    "/styles-XF46PWWA.css": "a70bd1d8a831bd412bf4ac546747eddde8bd8313"
   },
   "navigationUrls": [
     {
