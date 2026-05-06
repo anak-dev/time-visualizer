@@ -1,4 +1,4 @@
-import {Component, computed, inject, OnInit, signal} from '@angular/core';
+import {Component, computed, inject, OnInit, Signal, signal} from '@angular/core';
 import {ThemeService} from './services/theme.service';
 
 @Component({
@@ -9,6 +9,7 @@ import {ThemeService} from './services/theme.service';
       class="container"
       [class.azure-mode]="!isLiliTheme()"
       [class.dark-mode]="isDarkMode()"
+      [class.midway-point]="isMidwayPoint()"
       (click)="toggleTheme()"
     >
       <div class="node-container">
@@ -35,13 +36,13 @@ export class App implements OnInit {
   protected isLiliTheme = signal(true);
   protected isDarkMode = signal(false);
 
-  private totalWeeks = computed(() =>
+  private totalWeeks: Signal<number> = computed(() =>
     this.getDifferenceInWeeks(this.startDate, this.endDate)
   );
-  private totalWeeksPassed = computed(() =>
+  private totalWeeksPassed: Signal<number> = computed(() =>
     this.getDifferenceInWeeks(this.startDate, this.currentDate)
   );
-  protected weeks = computed(() => {
+  protected weeks: Signal<{ isPassed: boolean; isCurrentWeek: boolean; }[]> = computed(() => {
     const total = this.totalWeeks();
     const passed = this.totalWeeksPassed();
 
@@ -50,6 +51,12 @@ export class App implements OnInit {
       isCurrentWeek: i === passed
     }));
   });
+  protected isMidwayPoint: Signal<boolean> = computed(() => {
+    const total = this.totalWeeks();
+    const passed = this.totalWeeksPassed();
+
+    return total / passed === 2;
+  })
 
   ngOnInit(): void {
     this.isLiliTheme.set(this.themeService.getTheme());

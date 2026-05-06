@@ -41,6 +41,13 @@
       background-color: var(--azure-950)
     }
   }
+
+  &.midway-point {
+    .node-current-week {
+      --node-anticipated-color: var(--rose-500);
+      animation: blink 0.48s infinite;
+    }
+  }
 }
 
 .node-container {
